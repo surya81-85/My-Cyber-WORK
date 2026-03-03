@@ -1,1 +1,14 @@
 vulnerability scanning tools and use them to perform a vulnerability scan on a target host.
+
+# using Nmap and Kali LINUX VM
+
+using Nmap And NSE( Nmap Security engine)
+
+# start VM and Login with  kali as both admin and pass
+
+use PING command wheather the IP is reachable or not
+
+PING 192.168.0.0/24 
+
+
+
