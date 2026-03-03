@@ -6,11 +6,15 @@ using Nmap And NSE( Nmap Security engine)
 
 # start VM and Login with  kali as both admin and pass
 
+open ternminal
+
+make sure that installed nmap and include packages needs
+
 use PING command wheather the IP is reachable or not
 
 PING 10.6.6.23 
 
-# ping -c 5 10.6.6.23
+# nmap ping -c 5 10.6.6.23
 
 it stops the ping after 5 lines 
 
