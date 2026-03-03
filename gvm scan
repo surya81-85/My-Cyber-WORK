@@ -1,2 +1,76 @@
 this is also kali tool to scan vulnerability
 
+it is open source vulnerbility management tool 
+
+install gvm in kali and setup 
+
+nmap is easy to use for most kali linux users than this GVM GUI
+
+
+┌──(kali㉿Kali)-[~]
+└─$ sudo gvm-check-setup
+
+message that the scanner is loading in Firefox will appear.
+
+┌──(kali㉿Kali)-[~]
+└─$ sudo gvm-start
+[>] Please wait for the GVM services to start.
+[>]
+[>] You might need to refresh your browser once it opens.
+[>]
+[>]  Web UI (Greenbone Security Assistant): https://127.0.0.1:9392
+ 
+● gsad.service - Greenbone Security Assistant daemon (gsad)
+     Loaded: loaded (/lib/systemd/system/gsad.service; disabled; preset: disabled)
+     Active: active (running) since Fri 2023-03-24 18:13:28 UTC; 10ms ago
+       Docs: man:gsad(8)
+             https://www.greenbone.net
+   Main PID: 57707 (gsad)
+      Tasks: 1 (limit: 4606)
+     Memory: 912.0K
+        CPU: 3ms
+     CGroup: /system.slice/gsad.service
+             ├─57707 /usr/sbin/gsad --foreground --listen 127.0.0.1 --port 9392
+             └─57709 /usr/sbin/gsad --foreground --listen 127.0.0.1 --port 9392
+ 
+Mar 24 18:13:28 Kali systemd[1]: Starting gsad.service - Greenbone Security Assistant daemon (gsad)...
+Mar 24 18:13:28 Kali systemd[1]: Started gsad.service - Greenbone Security Assistant daemon (gsad).
+ 
+● gvmd.service - Greenbone Vulnerability Manager daemon (gvmd)
+     Loaded: loaded (/lib/systemd/system/gvmd.service; disabled; preset: disabled)
+     Active: active (running) since Fri 2023-03-24 18:13:23 UTC; 5s ago
+       Docs: man:gvmd(8)
+   Process: 57631 ExecStart=/usr/sbin/gvmd --osp-vt-update=/run/ospd/ospd.sock --listen-group=_gvm (code=exited, status=0/SUCCESS)
+   Main PID: 57637 (gvmd)
+      Tasks: 1 (limit: 4606)
+     Memory: 164.6M
+        CPU: 360ms
+     CGroup: /system.slice/gvmd.service
+             └─57637 "gvmd: gvmd: Wa" --osp-vt-update=/run/ospd/ospd.sock --listen-group=_gvm
+ 
+Mar 24 18:13:23 Kali systemd[1]: Starting gvmd.service - Greenbone Vulnerability Manager daemon (gvmd)...
+Mar 24 18:13:23 Kali systemd[1]: gvmd.service: Can't open PID file /run/gvmd/gvmd.pid (yet?) after start: Operation not permitted
+Mar 24 18:13:23 Kali systemd[1]: Started gvmd.service - Greenbone Vulnerability Manager daemon (gvmd).
+ 
+● ospd-openvas.service - OSPd Wrapper for the OpenVAS Scanner (ospd-openvas)
+     Loaded: loaded (/lib/systemd/system/ospd-openvas.service; disabled; preset: disabled)
+     Active: active (running) since Fri 2023-03-24 18:13:23 UTC; 5s ago
+       Docs: man:ospd-openvas(8)
+             man:openvas(8)
+    Process: 57613 ExecStart=/usr/bin/ospd-openvas --config /etc/gvm/ospd-openvas.conf --log-config /etc/gvm/ospd-logging.conf (code=exited, status=0/SUCCESS)
+   Main PID: 57619 (ospd-openvas)
+      Tasks: 5 (limit: 4606)
+     Memory: 50.2M
+        CPU: 391ms
+     CGroup: /system.slice/ospd-openvas.service
+             ├─57619 /usr/bin/python3 /usr/bin/ospd-openvas --config /etc/gvm/ospd-
+openvas.conf --log-config /etc/gvm/ospd-logging.conf
+             └─57623 /usr/bin/python3 /usr/bin/ospd-openvas --config /etc/gvm/ospd-
+openvas.conf --log-config /etc/gvm/ospd-logging.conf
+ 
+Mar 24 18:13:22 Kali systemd[1]: Starting ospd-openvas.service - OSPd Wrapper for the OpenVAS Scanner (ospd-openvas)...
+Mar 24 18:13:23 Kali systemd[1]: Started ospd-openvas.service - OSPd Wrapper for the OpenVAS Scanner (ospd-openvas).
+ 
+[>] Opening Web UI (https://127.0.0.1:9392) in: 5... 4... 3... 2... 1...
+
+
