@@ -2,12 +2,12 @@ this is also kali tool to scan vulnerability
 
 it is open source vulnerbility management tool 
 
-install gvm in kali and setup 
+# install gvm in kali and setup 
 
 nmap is easy to use for most kali linux users than this GVM GUI
 
 
-┌──(kali㉿Kali)-[~]
+ # ┌──(kali㉿Kali)-[~]
 └─$ sudo gvm-check-setup
 
 message that the scanner is loading in Firefox will appear.
