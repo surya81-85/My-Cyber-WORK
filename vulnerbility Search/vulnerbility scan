@@ -33,7 +33,7 @@ it list the ports and services running
 
  #  nmap -sV --script vulners --script-args mincvss=4 10.6.6.23
 
- Starting Nmap 7.93 ( https://nmap.org ) at 2023-03-15 14:01 MST
+# Starting Nmap 7.93 ( https://nmap.org ) at 2023-03-15 14:01 MST
 Nmap scan report for 10.6.6.23
 Host is up (0.0000040s latency).
 Not shown: 994 closed tcp ports (reset)
