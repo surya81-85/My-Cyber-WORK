@@ -1,0 +1,31 @@
+# this SET Toolkit is for all social engineering attacks
+
+# this is open source toolkit
+
+https://github.com/trustedsec/social-engineer-toolkit this has more resources as you can Use Developed by DAVID KENNEDY
+
+# INSTALLATION
+
+below is only to kali linux installation through terminal
+
+git clone https://github.com/trustedsec/social-engineer-toolkit/ setoolkit/
+cd setoolkit
+pip3 install -r requirements.txt
+python setup.py
+
+# once installed start by command SET
+
+# note: only runs in root user
+
+this setoolkit is to perform phishing and other social engineering attacks
+
+1.  Spear-Phishing Attack Vectors
+2.  Website Attack Vectors
+3.  Infectious Media Generator
+4.  Create a Payload and Listener
+5.  Mass Mailer Attack
+6.  Arduino-Based Attack Vector
+7.  Wireless Access Point Attack Vector
+8.  QRCode Generator Attack Vector
+9.  Powershell Attack Vectors
+10. Third Party Modules

