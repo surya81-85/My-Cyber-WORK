@@ -12,7 +12,7 @@ nmap is easy to use for most kali linux users than this GVM GUI
 
 message that the scanner is loading in Firefox will appear.
 
-┌──(kali㉿Kali)-[~]
+# ┌──(kali㉿Kali)-[~]
 └─$ sudo gvm-start
 [>] Please wait for the GVM services to start.
 [>]
@@ -73,4 +73,4 @@ Mar 24 18:13:23 Kali systemd[1]: Started ospd-openvas.service - OSPd Wrapper for
  
 [>] Opening Web UI (https://127.0.0.1:9392) in: 5... 4... 3... 2... 1...
 
-
+# it redirects to the gvm web ui  
