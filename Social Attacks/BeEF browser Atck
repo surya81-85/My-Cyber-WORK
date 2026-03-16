@@ -11,7 +11,7 @@ if not it asks need to download [y/n]?
 
 once installed open it through command 
 
-    ─(kali㉿kali)-[~]
+     ─(kali㉿kali)-[~]
  $ beef-xss
 Command 'beef-xss' not found, but can be installed with:
 sudo apt install beef-xss
