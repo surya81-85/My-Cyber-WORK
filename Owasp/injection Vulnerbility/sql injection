@@ -1,2 +1,5 @@
 SQL injection (SQLi) vulnerabilities can be catastrophic because they can allow an attacker to view, insert, delete, or modify records in a database. In injection attack, the attacker inserts, or injects, partial or complete SQL queries via the web application. The attacker injects SQL commands into input fields in an application or a URL in order to execute predefined SQL commands.
 
+https://github.com/surya81-85/SQL-I.git
+
+this is my repo of SQLI demo
